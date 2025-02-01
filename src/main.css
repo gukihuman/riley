@@ -1,1 +1,13 @@
 @import "tailwindcss";
+textarea::-webkit-scrollbar {
+    @apply w-2;
+}
+textarea::-webkit-scrollbar-thumb {
+    @apply bg-stone-500 rounded-lg;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+    @apply bg-stone-600 cursor-grab;
+}
+textarea::selection {
+    @apply bg-stone-600 text-stone-300;
+}
