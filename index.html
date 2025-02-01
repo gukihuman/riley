@@ -4,15 +4,24 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/ico" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
         <link href="/src/main.css" rel="stylesheet" />
         <script type="module" src="/src/main.js"></script>
         <title>Riley</title>
     </head>
     <body class="bg-stone-500 flex justify-center h-screen">
-        <div class="bg-stone-400 w-[700px] p-2 shadow-lg">
+        <div class="bg-stone-400 w-[700px] p-2 shadow-lg relative">
             <textarea
                 class="w-full h-full p-8 resize-none focus:outline-none text-stone-800 text-xl"
             ></textarea>
+            <button
+                class="absolute bottom-4 right-4 px-4 py-2 bg-stone-500 rounded-lg hover:cursor-pointer hover:bg-stone-600 text-stone-400 hover:text-stone-300"
+            >
+                <i class="fa-solid fa-cloud-arrow-down text-2xl"></i>
+            </button>
         </div>
     </body>
 </html>

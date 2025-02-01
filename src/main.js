@@ -1,5 +1,9 @@
-// import { init, h, classModule } from "snabbdom"
-// const patch = init([classModule])
-// const vnode = h("body.bg-sky-500", "Hello, Snabbdom.")
-// const app = document.body
-// patch(app, vnode)
+const button = document.querySelector("button")
+button.addEventListener("click", () => {
+    const textarea = document.querySelector("textarea")
+    if (textarea.value) console.log(textarea.value)
+    button.classList.add("hidden")
+    setTimeout(() => {
+        button.classList.remove("hidden")
+    }, 1000)
+})
